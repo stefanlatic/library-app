@@ -1,0 +1,89 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg,rgb(135, 85, 227),rgb(35, 6, 97));
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    
+}
+header{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  
+}
+h1 {
+    margin-bottom: 0px;
+}
+h4{
+    font-family: "Dancing Script", sans-serif;
+    color: black;
+    font-size: 1.5rem;
+}
+form{
+    min-height: 30vh;
+    display:flex; 
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1.3rem;
+    
+}
+input {
+    width: 250px;
+    height: 30px;
+}
+.new-book-button{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding-bottom: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.books-list {
+    list-style: none;
+    
+}
+.books {
+    min-width: 99vh;
+    margin: 0.3rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.library-title{
+    font-family:"Dancing Script", sans-serif ;
+    color: black;
+}
+.trash-button{
+    background: rgb(45, 2, 109);
+    color:white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.material-symbols-outlined{
+    pointer-events: none;
+}
+    
