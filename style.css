@@ -1,197 +1,231 @@
 * {
-    box-sizing: border-box;
-  }
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #333;
-    min-height: 100vh;
-  }
-  
-  .auth-container, .form, .app, .library-form, .library-tables {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .auth-container {
-    padding: 60px 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    max-width: 400px;
-    margin: 50px auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  }
-  
-  .form {
-    width: 100%;
-  }
-  
-  .form h2 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 20px;
-    font-size: 28px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #5e4b3c;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #3e3227;
-  }
-  
-  a {
-    color: #5e4b3c;
-    font-size: 14px;
-    margin-top: 10px;
-    text-decoration: underline;
-  }
-  
-  .app {
-    padding: 20px 16px;
-    background-color: rgba(255, 255, 255, 0.95);
-    margin: 30px auto;
-    border-radius: 20px;
-    max-width: 900px;
-    width: 100%;
-  }
-  
-  
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
-  
-  .user-info span {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .library-form h2 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 10px;
-  }
-  
-  .library-form input, .library-form button {
-    max-width: 300px;
-    width: 100%;
-  }
-  
-  .library-tables {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-    width: 100%;
-    max-width: 600px;
-  }
-  
-  .library-tables table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fdfdfd;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  .library-tables th, .library-tables td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
-  }
-  
-  .library-tables h3 {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .hidden {
-    display: none !important;
-  }
-  table.highlight {
-    background-color: #e8d4b7;
-  }
-  .dark-mode {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-  }
-  
-  .dark-mode .auth-container,
-  .dark-mode .app {
-    background-color: rgba(40, 40, 40, 0.95);
-  }
-  
-  .dark-mode input,
-  .dark-mode button {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
-  }
-  
-  .dark-mode a {
-    color: #bbb;
-  }
-  
-  .dark-mode table {
-    background-color: #2c2c2c;
-    color: #f0f0f0;
-  } 
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #333;
+  min-height: 100vh;
+  padding: 0 16px; 
+}
 
-  @media screen and (max-width: 600px) {
-    .library-tables {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .auth-container, .app {
-      margin: 20px auto;
-      padding: 16px;
-    }
-  
-    h2, h3 {
-      font-size: 20px;
-      text-align: center;
-    }
-  
-    input, button {
-      font-size: 14px;
-    }
-  
-    .library-tables table {
-      font-size: 14px;
-    }
-  
-    .user-info {
-      flex-direction: column;
-      align-items: flex-end;
-    }
+.auth-container, .app {
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  margin: 40px auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.form, .app, .library-form, .library-tables, .auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.form h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5e4b3c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3e3227;
+}
+
+a {
+  color: #5e4b3c;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.user-info span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.library-form h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.library-form input, .library-form button {
+  max-width: 300px;
+  width: 100%;
+}
+
+.library-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.library-tables table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  word-break: break-word;
+}
+
+.library-tables th, .library-tables td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.library-tables td {
+  word-break: break-word;
+  white-space: normal;
+}
+
+.library-tables h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+table.highlight {
+  background-color: #e8d4b7;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .auth-container,
+.dark-mode .app {
+  background-color: rgba(40, 40, 40, 0.95);
+}
+
+.dark-mode input,
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode a {
+  color: #bbb;
+}
+
+.dark-mode table {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 12px;
   }
-  
+
+  .auth-container, .app {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+
+  .library-tables table {
+    font-size: 14px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 8px;
+  }
+
+  .auth-container, .app {
+    padding: 8px;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+
+  input, button {
+    font-size: 13px;
+  }
+
+  .library-tables table {
+    font-size: 10px;
+  }
+  .library-tables th, .library-tables td {
+  padding: 2px;
+}
+.user-info span {
+  font-weight: bold;
+font-size: 12px;
+}
+
+button {
+  padding: 6px;
+  font-size: 12px;
+}
+}
